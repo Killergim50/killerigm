@@ -1,0 +1,80 @@
+package aula;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+	
+		String nome, comando;
+		Random rand = new Random();
+		System.out.println("Seja bem vindo ao Chegue na Facul!");
+		System.out.println("Digite o seu nick");
+		nome = in.nextLine();
+		System.out.println("Seja muito bem Vindo " +nome) ;
+		System.out.println("esse é um jogo de decisões, tente escolher a melhor sempre! ");
+		System.out.println("                     ");
+		System.out.println("O alarme toca 10min antes do esperado, oque vc faz...");
+		System.out.println("aperte a, para levantar ou d, para dormir por mais 10 min");
+		comando = in.nextLine();
+		if(comando.equals("a")) {
+			System.out.println("Voce levanta, para que nao se atrase para a facul...");		
+			System.out.println("o onibus esta vindo, porem esta MUITO CHEIO");
+			System.out.println("aperte a para pegar assim mesmo ou d para esperar o proximo.");
+			comando = in.nextLine();
+				if(comando.equals("a")) {
+					System.out.println("Voce pegou o onibus e viu um cara encochando uma moca oque fazer?");
+					System.out.println(" (A)Pego o canivete e vou la ensinar bons modos a ele (D) Deixo acontecer pois n tenho nd a haver com isso");
+					comando = in.nextLine();
+						if(comando.equals("a")) { 
+							System.out.println("vc pega o canivete e quando vai fazer alguma coisa descobre que eles sao um casal e o policial te prende fim de jogo!");
+						}else {
+							if(comando.equals("d")) {
+								System.out.println("Vc descobre que eles eram um casal, ainda bem que nao fez nada");
+								System.out.println("vc desce do onibus e esta indo a caminho da facul, com o celular na mao");
+								System.out.println("vc cai em um boeiro e fica preso e se da conta que o seu celular ficou la em cima, oq fazer?");
+								System.out.println("(A)Ficar gritando igual uma gazela  (D)Aceitar o morte ");
+								comando = in.nextLine();
+								if(comando.equals("a")) {
+									System.out.println("vc grita o suficiente para te acharem e te salvar, e vai para a ambulancia");
+									System.out.println("No caminho um carro desgovernado bate na ambulacia e vc morre, GAME OVER");
+								}else {
+									if(comando.equals("d")) {
+										System.out.println("vc Morre e GAMER OVER!!");
+									}
+								}
+							}
+						}
+				}else {
+					if(comando.equals("d")) {
+						System.out.println("Vc esperou pelo proximo onibus e n pode entrar pq estava atrasado. FIM DE JOGO");
+						System.out.println("Creditos: eu e Pedro kk");
+					}
+				}
+		}else {
+			if(comando.equals("d")) {
+	            if(rand.nextInt(100) < 75) {
+	                System.out.println("Voce consegue acordar e sair pra faculdade, porem vc percebe que nao pegou dinheiro, (A)Pedir carona  (D)Ir correndo");
+	                comando = in.nextLine();
+	                if(comando.equals("a")) {
+	                	System.out.println("vc pega carona, porem o motorista te leva pra longe e vc nunca mais é visto, FIM DE JOGO");
+	                }else {
+	                	if(comando.equals("d"));
+	                	System.out.println("Voce vai correndo e chega na facul em cima da hora, e consegue entrar porem todo suado e fedido, VC GANHOU FIM DE JOGO!");}
+	            }else {
+	            	System.out.println("Voce dormiu pra caralho e perdeu a hora");
+	            }
+	        }
+		}
+
+		
+		
+
+		    
+
+	}
+
+
+		}
